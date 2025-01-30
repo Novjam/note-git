@@ -5,6 +5,13 @@ git config --global user.email xxx
 git config --global user.name
 git config --global user.email
 
+生成SSH公钥
+ssh-keygen -t rsa一路回车
+获取公钥（公钥用于远程仓库的配置）
+cat ~/.ssh/id_rsa.pub
+验证是否配置成功
+ssh -T git@gitee.com
+
 git 三个区域，分别是工作区->暂存区->仓库
 
 查看三区状态：git status
