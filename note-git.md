@@ -1,3 +1,10 @@
+配置用户名和邮箱
+git config --global user.name xxx
+git config --global user.email xxx
+查看用户名和邮箱
+git config --global user.name
+git config --global user.email
+
 git 三个区域，分别是工作区->暂存区->仓库
 
 查看三区状态：git status
