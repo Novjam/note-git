@@ -22,3 +22,7 @@ git 三个区域，分别是工作区->暂存区->仓库
 删除xxx分支：git branch -d xxx
 强制删除xxx分支（xxx分支可能有未合并的内容）：git branch -D xxx
 
+合并分支
+先用git checkout target分支 切换到target分支，使用git merge ource分支 将source分支合并到target分支
+若无冲突，则直接合并成功，否则
+在target分支找到冲突文件，解决冲突，然后git add .命令加上git commit命令完成分支的合并
