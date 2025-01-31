@@ -54,3 +54,4 @@ git remote
 git push origin master:master
 拉：git pull [remote name] [branch name]
 抓：git fetch [remote name] [branch name]（只会把ccommit信息同步到本地，不会merge，需要手动merge）
+（注意：在push之前先执行pull，在本地解决冲突，然后再push）
