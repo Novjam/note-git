@@ -46,7 +46,7 @@ git remote add origin 远程仓库的SSH地址
 查看远程仓库
 git remote
 或git remote -v
-克隆：git clone 仓库ssh地址
+克隆：git clone 仓库ssh地址 [文件夹名]
 推：git push [-f] [--set-upstream] [远端名称 [本地分支][:远端分支]]
 [-f]表示强制覆盖（威胁操作）
 [--set-upstream]建立本地分支到远程分支的关联关系
