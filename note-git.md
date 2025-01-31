@@ -5,13 +5,6 @@ git config --global user.email xxx
 git config --global user.name
 git config --global user.email
 
-生成SSH公钥
-ssh-keygen -t rsa一路回车
-获取公钥（公钥用于远程仓库的配置）
-cat ~/.ssh/id_rsa.pub
-验证是否配置成功
-ssh -T git@gitee.com
-
 git 三个区域，分别是工作区->暂存区->仓库
 
 查看三区状态：git status
@@ -40,3 +33,17 @@ git 三个区域，分别是工作区->暂存区->仓库
 先用git checkout target分支 切换到target分支，使用git merge ource分支 将source分支合并到target分支
 若无冲突，则直接合并成功，否则
 在target分支找到冲突文件，解决冲突，然后git add .命令加上git commit命令完成分支的合并
+
+连接远程仓库
+生成SSH公钥
+ssh-keygen -t rsa一路回车
+获取公钥（公钥用于远程仓库的配置）
+cat ~/.ssh/id_rsa.pub
+验证是否配置成功
+ssh -T git@gitee.com
+从远程仓库获取SSH地址
+git remote add origin 远程仓库的SSH地址
+查看远程仓库
+git remote
+或git remote -v
+推：git push origin master
